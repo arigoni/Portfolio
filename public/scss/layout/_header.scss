@@ -1,0 +1,56 @@
+.header {
+    &_contact {
+        background-color: $bg-primary;
+    }
+    a {
+        color: $color-primary;
+        &:hover {
+            color: $color-tertiary; 
+        }
+    }
+    &_bloc {
+        width: 100%;
+        height: 30.469rem;
+        padding-top: 3.125rem;
+        background-image: url('../img/header.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .navbar {
+            background-color: $bg-secondary;
+            margin-top: 2.5rem;
+            svg {
+                fill: $color-tertiary;
+            }
+        }  
+        h1 {
+            @include font(1.8rem, 600, 2.5rem);
+        }
+        a {
+            @include font(1.3rem, 400, 2.5rem);
+        } 
+        .custom-toggler.navbar-toggler {
+            border-color: $color-primary;
+        }
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        a.hvr-underline-from-left::before {
+            background: $color-tertiary;
+        }
+        h2.catchphrase {
+            @include font(2.5rem, 600, 3.125rem);
+            text-transform: uppercase;
+            margin-top: 11rem;
+        }
+        a.down-arrow {
+            display: block;
+            width: 4.125rem;
+            img {
+                margin-top: 3rem;
+                width: 100%;
+                animation: arrow 1s ease-in-out infinite alternate;
+            }
+        }
+    }
+}

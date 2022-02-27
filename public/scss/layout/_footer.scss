@@ -1,0 +1,19 @@
+footer {
+    background-color: $bg-tertiary;
+    color: $color-primary;
+    .NavFooter {
+        background-color: $bg-footer;
+    }
+    h3 {
+        @include font(1.2rem, 600, 1.6rem);
+    }
+    a, p {
+        @include font(1rem, 400, 1.8rem);
+    }
+    a {
+        color: $color-primary;
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}

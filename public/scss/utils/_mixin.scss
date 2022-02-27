@@ -1,0 +1,24 @@
+// Fonts
+@mixin font ($size, $weight, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+// hr
+@mixin hr {
+    width: 5rem;
+    height: 0.3125rem;
+    opacity: 1;
+}
+@mixin hrlist {
+    hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Transition
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+    transition: $property $duration $ease;
+}
