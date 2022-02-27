@@ -1,24 +1,7 @@
 # kev
 
-## Project setup
+## Information
 ```
-npm install
-```
+Voici mon portfolio en HTML, Sass, Javascript et PHP en utilisant le framework CSS Bootstrap. Je ne voulais pas utiliser d'autres frameworks.
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
